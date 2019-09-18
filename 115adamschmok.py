@@ -18,14 +18,14 @@ counter = 0
 drawer.penup()
 eye = 0
 drawer.goto(10,20)
-while (eye < 0):
-eye = eye + 1
-drawer.pencolor("red")
-drawer.pendown()
-drawer.circle(5)
-drawer.pencolor("black")
-drawer.penup()
-drawer.goto(-10,20)
+while (eye < 2):
+  eye = eye + 1
+  drawer.pencolor("red")
+  drawer.pendown()
+  drawer.circle(5)
+  drawer.penup()
+  drawer.pencolor("black")
+  drawer.goto(-10,20)
 #draw legs
 while (counter < (legs/2)):
   drawer.goto(0,0)
