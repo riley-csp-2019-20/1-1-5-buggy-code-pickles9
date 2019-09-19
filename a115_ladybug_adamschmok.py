@@ -6,8 +6,29 @@ ladybug = trtl.Turtle()
 ladybug.pensize(40)
 ladybug.circle(5)
 
+# Draw legs
+legCount = 6
+legRepeat = 0
+ladybug.pensize(5)
+while (legRepeat < 3):
+  legRepeat += 1
+  ladybug.penup()
+  ladybug.goto(0,-35)
+  ladybug.pendown()
+  ladybug.setheading(((180/legCount)*legRepeat)+120)
+  ladybug.forward(50)
+
+while (legRepeat < 6 ):
+  legRepeat += 1
+  ladybug.penup()
+  ladybug.goto(0,-35)
+  ladybug.pendown()
+  ladybug.setheading(((180/legCount)*legRepeat)-150)
+  ladybug.forward(50)
+
 # and body
 ladybug.penup()
+ladybug.setheading(0)
 ladybug.goto(0, -55) 
 ladybug.color("red")
 ladybug.pendown()
