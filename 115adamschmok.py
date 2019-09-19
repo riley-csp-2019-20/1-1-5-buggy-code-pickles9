@@ -9,6 +9,13 @@ drawer.goto(0,-20)
 drawer.pendown()
 drawer.circle(20)
 
+#make head
+drawer.penup()
+drawer.pensize(20)
+drawer.goto(0,50)
+drawer.pendown()
+drawer.dot(50)
+
 #configure legs
 legs = 8
 length = 100
@@ -17,7 +24,7 @@ drawer.pensize(5)
 counter = 0
 drawer.penup()
 eye = 0
-drawer.goto(10,20)
+drawer.goto(10,50)
 while (eye < 2):
   eye = eye + 1
   drawer.pencolor("red")
@@ -25,7 +32,7 @@ while (eye < 2):
   drawer.circle(5)
   drawer.penup()
   drawer.pencolor("black")
-  drawer.goto(-10,20)
+  drawer.goto(-10,50)
 #draw legs
 while (counter < (legs/2)):
   drawer.goto(0,0)
