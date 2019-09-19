@@ -35,15 +35,18 @@ while (eye < 2):
   drawer.goto(-10,50)
 #draw legs
 while (counter < (legs/2)):
+  drawer.penup()
   drawer.goto(0,0)
   drawer.pendown()
   drawer.setheading((leg_angle*counter)-leg_angle)
-  drawer.forward(length)
+  drawer.circle(length, 90)
   counter = counter + 1
 while (counter < legs):
+  drawer.penup()
   drawer.goto(0,0)
+  drawer.pendown()
   drawer.setheading((leg_angle*counter)-leg_angle+65)
-  drawer.forward(length)
+  drawer.circle(-length, 90)
   counter = counter + 1
 
 drawer.penup()
